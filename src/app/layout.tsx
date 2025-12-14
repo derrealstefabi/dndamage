@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import ConfigureAmplifyClientSide from "@/app/aws/ConfigureAmplifyClientSide";
 
 
 export const metadata: Metadata = {
@@ -16,7 +15,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/*<ConfigureAmplifyClientSide />*/}
         {children}
       </body>
     </html>

@@ -1,46 +1,8 @@
 "use client"
-import { Authenticator, useAuthenticator, Button, Heading } from '@aws-amplify/ui-react';
-import '@aws-amplify/ui-react/styles.css';
-import CharacterManager from '../components/CharacterManager';
 import NumberInput from "@/components/NumberInput";
-import {useEffect, useState} from "react"; // We will create this next
-
-// The component that renders when a user is signed in
-function AuthenticatedApp() {
-  // The useAuthenticator hook provides user data and a signOut function
-  const { user, signOut } = useAuthenticator((context) => [context.user]);
-
-  return (
-      <div>
-        <Heading level={1}>Welcome, {user.username}</Heading>
-        <CharacterManager />
-        <Button onClick={signOut} variation="primary" isFullWidth={true} marginTop="20px">
-          Sign Out
-        </Button>
-      </div>
-  );
-}
+import {useEffect, useState} from "react";
 
 
-// The component that renders when a user is signed in
-function calculateDamage() {
-  // The useAuthenticator hook provides user data and a signOut function
-  const { user, signOut } = useAuthenticator((context) => [context.user]);
-
-  return (
-      <div>
-        <Heading level={1}>Welcome, {user.username}</Heading>
-        <CharacterManager />
-        <Button onClick={signOut} variation="primary" isFullWidth={true} marginTop="20px">
-          Sign Out
-        </Button>
-      </div>
-  );
-}
-
-
-
-// The main export for your page
 export default function Home() {
     const [offensivBonus, setOffensivBonus] = useState(0);
     const [waffenSchaden, setWaffenSchaden] = useState(0);
