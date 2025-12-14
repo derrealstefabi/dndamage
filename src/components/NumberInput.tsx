@@ -1,5 +1,4 @@
-import {useState, useEffect, ChangeEvent, useRef} from 'react';
-import { TextField, Button, Card, Collection, Heading, Flex } from '@aws-amplify/ui-react';
+import {ChangeEvent, useRef} from 'react';
 
 type NumberInputProps = {
     id: string;
