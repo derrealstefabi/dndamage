@@ -14,7 +14,7 @@
     "@aws-sdk/client-dynamodb": "^3.939.0",
     "@aws-sdk/lib-dynamodb": "^3.939.0",
     "aws-amplify": "^6.15.8",
-    "next": "^15.0.0",
+    "next": "16.1.0-canary.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "serverless": "^4.25.0"
